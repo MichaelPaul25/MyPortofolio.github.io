@@ -40,9 +40,14 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        Hello im a software engineer. Im have 3 years experience in software engineer.
-                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
-                        for previewing layouts and visual mockups.
+                        Hello im a software engineer. I have 3 years of experience as a software engineer.
+                        As a conscientious and disciplined Mechatronics
+                        graduate with experience in programming. Highly
+                        skilled at producing optimal performance in a
+                        professional environment. Looking for a
+                        programmer position that requires strong skills with
+                        great responsibility. Expect a position in a company
+                        with high ethical values.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -51,16 +56,20 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>.Net Developer</span><br>ASP .Net MVC</li>
-                            <li><span>Web Developer</span><br>Html, Css, Bootstrap</li>
-                            <li><span>App Developer</span><br>ASP .Net MVC</li>
+                            <li><span>.Net Developer</span><br>.Net Framework, .Net Core</li>
+                            <li><span>Web Developer</span><br>Html, Css, Js, Bootstrap</li>
+                            <li><span>App Developer</span><br>ASP .Net MVC, OOP</li>
+                            <li><span>Programming Language</span><br>C#, C++</li>
+                            <li><span>Database</span><br>Oracle</li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023-Now</span><br>.Net Developer at Vanguard International Semiconductor.</li>
-                            <li><span>2020-2022</span><br>.Net Developer at PT. SIIX Indonesia.</li>
-                            <li><span>2020</span><br>Internship at PT. Flextronics Indonesia.</li>
+                            <li><span>Nov 2022-Now</span><br>.Net Developer at Vanguard International Semiconductor.</li>
+                            <li><span>Mar 2020 - Nov 2022</span><br>.Net Developer at PT. SIIX Indonesia.</li>
+                            <li><span>Nov 2020 - Mar 2020</span><br>Freelancer Programmer at PT. Scheneider Electric Indonesia.</li>
+                            <li><span>Jul 2020 - Nov 2020</span><br>Internship at PT. Flextronics Indonesia.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -191,11 +200,11 @@
     </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        
-        function openmenu(){
+
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
     </script>
@@ -203,20 +212,20 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxXcfoupE99ormz7RHXq2FJU4IE_TgwiVZ7xP0PGtvCeAkWKpD4cZOPTu1h6WyV3vKT/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },2000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
